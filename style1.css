@@ -1,0 +1,251 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar */
+#navbar{
+    position:relative;
+    /* position: sticky; */
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+#navbar::before{
+   content: "";
+   background-color:black;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+   opacity: 0.9;
+}
+
+/* Navigation bar:logo and images */
+#logo{
+    margin: 4px 26px
+
+}
+#logo img{
+    height:90px;
+    width: 100px;
+    margin: 3px 6px;
+    border-radius: 50px;
+}
+div input{
+    border: 2px solid black;
+    margin: 0px 11px;
+    border-radius: 5px;
+    
+
+}
+#navbar ul{
+    display: flex;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: black;
+    padding: 3px 22px;
+    display: block;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    padding: 3px 22px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: -1px 200px;
+    height:670px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+   background:url('../photo/food.jpg') no-repeat center center/cover;
+   position: absolute;
+   z-index: -1;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   opacity: 0.85;
+}
+/* Services center */
+#services{
+
+    
+    margin-top: 34px;
+    
+    display: flex;
+   
+}
+
+#services .bex{
+    border: 2px solid red;
+      margin: 5px 6px;
+      border-radius: 20px;
+      padding: 34px;
+      background-color: #f2f2f2;
+}
+#services .bex img{
+    
+    height: 100px;
+    display: block;
+    margin: auto;
+    
+    width: 140px;
+    border-radius: 20px;
+}
+#services .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+    
+
+}
+#client-section::before{
+    margin-top: 15px;
+    content: "";
+    position:absolute;
+    background: url("../photo/client.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-items{
+    padding: 34px;
+}
+
+#clients img{
+    height: 100px;
+    border-radius: 10px;
+    
+}
+/* 
+Contact section */
+#contact{
+    position: relative;
+    margin-top: 100px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../photo/form.jpeg) no-repeat center center/cover;
+    z-index: -1;
+    overflow: 0.4;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom :34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contact-box label{
+    width: 40%;
+}
+
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 3px;
+
+}
+
+
+
+
+/* utility class */
+
+#home h1{
+    color:black;
+    text-align: center;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: oblique;
+    margin: 12px 34px;
+    padding: -34px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 16px;
+    font-style: italic;
+    margin: 21px;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-style: italic;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(203, 247, 203);
+    border-radius: 5px;
+    margin: 17px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
